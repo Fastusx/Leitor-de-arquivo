@@ -62,7 +62,9 @@ public class Main {
         for (String filme : filmes) {
             System.out.println(filme);
         }
-        String nome = "Toy,";
-        ProcuraPorNome(filmes, nome);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite o nome do filme, ou apenas parte dele, para a procura: ");
+        String nomeProcurado = scanner.nextLine();
+        ProcuraPorNome(filmes,nomeProcurado);
     }
 }
